@@ -36,7 +36,7 @@ describe Couchbase::MaxMemoryQuotaCalculator do
     end
 
     it "is 7GB for 8GB, using the max minus 1GB rule" do
-      described_class.new(8.gigabytes).in_megabytes.should eql (7.gigabytes / 1024 / 1024)
+      described_class.new(8.gigabytes).in_megabytes.should eql(7.gigabytes / 1024 / 1024)
     end
   end
 end
